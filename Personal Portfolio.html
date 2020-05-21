@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<style type="text/css">
+		body{
+			font-family: 'Open Sans', sans-serif;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		 nav ul{
+		 	position: fixed;
+			text-align: right;
+			width: 100%;
+			list-style-type: none;
+			background-color: #e0ebe8;
+		}
+		nav ul li {
+    		display: inline-block;
+    		margin: 55px;
+    		margin-bottom: 15px;
+    		margin-top: 25px;
+    	}
+		#navbar a{
+			text-decoration: none;
+			text-align: center;
+			color: #008080;
+			background-color: #e0ebe8;
+			
+		}
+		@media only screen and (max-width:500px)
+		{
+			#navbar ul{
+				text-align: center;
+			}
+			nav ul li{
+				margin:20px;
+			}
+			.project{
+				margin: 40px 0;
+			}
+		}
+		#welcome-section{
+			background-color: #e0ebe8;
+			top:0;
+			min-height: 55vh;
+			padding-top: 45vh;
+			text-align: center;
+			line-height: 2;
+			width: 100%;
+		}
+		h1{
+			font-size: 2em;
+		}
+		#welcome-section p{
+			color: green;
+		}
+		.work h3{
+			text-align: center;
+			color: #008080;
+			font-size: 25px;
+			font-weight: 100;
+			margin: 25px;
+		}
+		.project{
+			text-decoration: none;
+			color: #008080;
+			display: inline-block;
+			overflow: hidden;
+			border: 2px solid lightblue;
+			height: 220px;
+			width: 280px;
+			margin: 40px 100px;
+		}
+		.project-pic{
+			width: 100%;
+			height: 180px;
+			border-bottom: 2px solid lightblue;
+		}
+		.project-title{
+			text-align: center;
+			font-weight: bold;
+		}
+	/*	.show-all{
+			text-decoration: none;
+			width: 200px;
+			height: 30px;
+			margin: 20px auto 90px;
+			background: #e0ebe8;
+    		color: #008080;
+    		font-weight: bold;
+    		font-size: 1em;
+    		border: 2px solid #90C695;
+    		border-radius: 4px;
+    		cursor: pointer;
+    		padding-top: 10px;
+    		text-align: center;
+		} */
+		#contact{
+			text-align: center;
+			margin-top: 150px;
+			background: #C8F7C5;
+			padding-bottom: 160px;
+		}
+		#desc{
+			line-height: 2;
+			padding: 160px 0 110px; 
+		}
+		#layout a{
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			color: #008080;
+			border: 2px solid lightblue;
+			border-radius: 100%;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			margin: 0 35px 45px 35px;
+			background: #e0ebe8;
+    		color: #008080;
+    		font-weight: bold;
+		}
+		#layout a:hover{
+			background-color: lightblue;
+			color: green;
+		}
+		footer{
+			padding: 50px 0;
+			text-align: center;
+			background-color: #22313F;;
+			color: white;
+			line-height: 2;
+		}
+		footer a{
+			color: white;
+		}
+		@media only screen and (max-width: 367px)
+		{
+			.profile{
+				border: 2px solid #90C695;
+				border-radius: 0;
+				width: 90px;
+				height: 20px;
+				padding: 10px;
+				line-height: normal;
+			}
+		}
+	</style>
+	<nav>
+		<ul id="navbar">
+			<li><a href="#welcome-section">About</a></li>
+			<li><a href="#projects">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<section id="welcome-section">
+		<h1>Hey,This is Dev..!</h1>
+			<p>a web Developer</p>
+	</section>
+	<section id="projects" class="work">
+		<h3>These are some of my projects..</h3>
+		<a href="https://codepen.io/anon/pen/jRLZjy#anon-login" target="_blank" class=" project project-title">
+			<img  class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png" alt="Project">
+			<div class="project-title">Tribute Page</div>
+		</a>
+		<a href="https://codepen.io/anon/pen/XwrdKN" target="_blank" class="project project-title">
+			<img class="project-pic"src="https://screenshot.codepen.io/260521.RKRbwL.small.d9c6995f-d3f7-4fde-bab7-a3a489b26c67.png" alt="Project">
+			<div class="project-title">Product Landing Page</div>
+		</a>
+		<a href="https://codepen.io/anon/pen/EzjzxM" target="_blank" class="project project-title">
+			<img class="project-pic" src="https://screenshot.codepen.io/260521.NdrKKL.small.d8950dd9-88c9-4c6f-84e3-36155fa18fcc.png" alt="Project">
+			<div class="project-title">Techincal Documentation</div>
+		</a>
+		
+	</section>
+	<section id="contact">
+	<div id="desc">
+		<h1>Let's Work Together</h1>
+		<p>How do you take your coffee?</p>
+	</div>
+	<div id="layout">
+		<a href="https://www.facebook.com/freecodecamp" class="profile" target="_blank">Facebook</a>
+		<a href="https://github.com/freecodecamp" class="profile" target="_blank">GitHub</a>
+		<a href="https://twitter.com/freecodecamp" class="profile" target="_blank">Twitter</a>
+		<a href="mailto:example123@gmail.com" class="profile" target="_blank">Send a mail</a>
+		<a href="tel:9645652110" class="profile" target="_blank">Call Me</a>
+	</div>	
+	</section>
+	<footer>
+		<p>**This is just a fake portfolio.. All the projects and contact details given are not real..</p>
+		<p>&copy; Created For <a href="https://www.freecodecamp.org/" id="profile-link">FreeCodeCamp</a></p>
+		
+	</footer>
+</body>
+</html>
